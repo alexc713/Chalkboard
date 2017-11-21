@@ -1,9 +1,12 @@
 ﻿Public Class FacultyLogin
+    ' This is the module that allows faculty to login
+    ' Registration button is set to invisible. Only necessary for initial setup.
+
     Private Sub btnLogin_Click(sender As Object, e As EventArgs) Handles btnLogin.Click
         If (txtUsername.Text = My.Settings.facultyUsername And txtPassword.Text = My.Settings.facultyPassword) Then
             ' This is a placeholder to confirm login. Remove once other module is built.
-            MsgBox("Login successful!", MsgBoxStyle.Information)
-            'Form?.Show()
+            'MsgBox("Login successful!", MsgBoxStyle.Information)
+            FacultyControlPanel.Show()
             Me.Close()
         Else
             MsgBox("Incorrect login information. Please try again.", MsgBoxStyle.Information)
