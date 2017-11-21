@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class Main
+Partial Class Login
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
@@ -22,11 +22,16 @@ Partial Class Main
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Main))
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Login))
         Me.lblUsername = New System.Windows.Forms.Label()
         Me.lblPassword = New System.Windows.Forms.Label()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
+        Me.txtUsername = New System.Windows.Forms.TextBox()
+        Me.txtPassword = New System.Windows.Forms.TextBox()
+        Me.btnLogin = New System.Windows.Forms.Button()
+        Me.btnReset = New System.Windows.Forms.Button()
+        Me.btnExit = New System.Windows.Forms.Button()
+        Me.btnFaculty = New System.Windows.Forms.Button()
+        Me.lblCopyright = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
         'lblUsername
@@ -47,32 +52,82 @@ Partial Class Main
         Me.lblPassword.TabIndex = 1
         Me.lblPassword.Text = "Password:"
         '
-        'TextBox1
+        'txtUsername
         '
-        Me.TextBox1.Location = New System.Drawing.Point(228, 83)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(200, 29)
-        Me.TextBox1.TabIndex = 2
+        Me.txtUsername.Location = New System.Drawing.Point(228, 83)
+        Me.txtUsername.Name = "txtUsername"
+        Me.txtUsername.Size = New System.Drawing.Size(200, 29)
+        Me.txtUsername.TabIndex = 2
         '
-        'TextBox2
+        'txtPassword
         '
-        Me.TextBox2.Location = New System.Drawing.Point(228, 143)
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
-        Me.TextBox2.Size = New System.Drawing.Size(200, 29)
-        Me.TextBox2.TabIndex = 3
+        Me.txtPassword.Location = New System.Drawing.Point(228, 143)
+        Me.txtPassword.Name = "txtPassword"
+        Me.txtPassword.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
+        Me.txtPassword.Size = New System.Drawing.Size(200, 29)
+        Me.txtPassword.TabIndex = 3
         '
-        'Main
+        'btnLogin
+        '
+        Me.btnLogin.Location = New System.Drawing.Point(72, 221)
+        Me.btnLogin.Name = "btnLogin"
+        Me.btnLogin.Size = New System.Drawing.Size(150, 50)
+        Me.btnLogin.TabIndex = 4
+        Me.btnLogin.Text = "Login"
+        Me.btnLogin.UseVisualStyleBackColor = True
+        '
+        'btnReset
+        '
+        Me.btnReset.Location = New System.Drawing.Point(239, 221)
+        Me.btnReset.Name = "btnReset"
+        Me.btnReset.Size = New System.Drawing.Size(150, 50)
+        Me.btnReset.TabIndex = 5
+        Me.btnReset.Text = "Reset"
+        Me.btnReset.UseVisualStyleBackColor = True
+        '
+        'btnExit
+        '
+        Me.btnExit.Location = New System.Drawing.Point(407, 221)
+        Me.btnExit.Name = "btnExit"
+        Me.btnExit.Size = New System.Drawing.Size(150, 50)
+        Me.btnExit.TabIndex = 6
+        Me.btnExit.Text = "Exit"
+        Me.btnExit.UseVisualStyleBackColor = True
+        '
+        'btnFaculty
+        '
+        Me.btnFaculty.Location = New System.Drawing.Point(12, 374)
+        Me.btnFaculty.Name = "btnFaculty"
+        Me.btnFaculty.Size = New System.Drawing.Size(150, 50)
+        Me.btnFaculty.TabIndex = 7
+        Me.btnFaculty.Text = "Faculty"
+        Me.btnFaculty.UseVisualStyleBackColor = True
+        '
+        'lblCopyright
+        '
+        Me.lblCopyright.AutoSize = True
+        Me.lblCopyright.Location = New System.Drawing.Point(221, 387)
+        Me.lblCopyright.Name = "lblCopyright"
+        Me.lblCopyright.Size = New System.Drawing.Size(182, 25)
+        Me.lblCopyright.TabIndex = 8
+        Me.lblCopyright.Text = "© 2017 Chalkboard"
+        '
+        'Login
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(11.0!, 24.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(976, 436)
-        Me.Controls.Add(Me.TextBox2)
-        Me.Controls.Add(Me.TextBox1)
+        Me.ClientSize = New System.Drawing.Size(638, 436)
+        Me.Controls.Add(Me.lblCopyright)
+        Me.Controls.Add(Me.btnFaculty)
+        Me.Controls.Add(Me.btnExit)
+        Me.Controls.Add(Me.btnReset)
+        Me.Controls.Add(Me.btnLogin)
+        Me.Controls.Add(Me.txtPassword)
+        Me.Controls.Add(Me.txtUsername)
         Me.Controls.Add(Me.lblPassword)
         Me.Controls.Add(Me.lblUsername)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
-        Me.Name = "Main"
+        Me.Name = "Login"
         Me.Text = "Chalkboard"
         Me.ResumeLayout(False)
         Me.PerformLayout()
@@ -81,6 +136,11 @@ Partial Class Main
 
     Friend WithEvents lblUsername As Label
     Friend WithEvents lblPassword As Label
-    Friend WithEvents TextBox1 As TextBox
-    Friend WithEvents TextBox2 As TextBox
+    Friend WithEvents txtUsername As TextBox
+    Friend WithEvents txtPassword As TextBox
+    Friend WithEvents btnLogin As Button
+    Friend WithEvents btnReset As Button
+    Friend WithEvents btnExit As Button
+    Friend WithEvents btnFaculty As Button
+    Friend WithEvents lblCopyright As Label
 End Class
