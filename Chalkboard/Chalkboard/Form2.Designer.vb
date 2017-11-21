@@ -24,7 +24,6 @@ Partial Class FacultyLogin
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(FacultyLogin))
         Me.lblCopyright = New System.Windows.Forms.Label()
-        Me.btnFaculty = New System.Windows.Forms.Button()
         Me.btnExit = New System.Windows.Forms.Button()
         Me.btnReset = New System.Windows.Forms.Button()
         Me.btnLogin = New System.Windows.Forms.Button()
@@ -32,6 +31,7 @@ Partial Class FacultyLogin
         Me.txtUsername = New System.Windows.Forms.TextBox()
         Me.lblPassword = New System.Windows.Forms.Label()
         Me.lblUsername = New System.Windows.Forms.Label()
+        Me.btnRegister = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'lblCopyright
@@ -42,15 +42,6 @@ Partial Class FacultyLogin
         Me.lblCopyright.Size = New System.Drawing.Size(182, 25)
         Me.lblCopyright.TabIndex = 17
         Me.lblCopyright.Text = "© 2017 Chalkboard"
-        '
-        'btnFaculty
-        '
-        Me.btnFaculty.Location = New System.Drawing.Point(13, 373)
-        Me.btnFaculty.Name = "btnFaculty"
-        Me.btnFaculty.Size = New System.Drawing.Size(150, 50)
-        Me.btnFaculty.TabIndex = 16
-        Me.btnFaculty.Text = "Faculty"
-        Me.btnFaculty.UseVisualStyleBackColor = True
         '
         'btnExit
         '
@@ -112,13 +103,22 @@ Partial Class FacultyLogin
         Me.lblUsername.TabIndex = 9
         Me.lblUsername.Text = "Username:"
         '
+        'btnRegister
+        '
+        Me.btnRegister.Location = New System.Drawing.Point(240, 288)
+        Me.btnRegister.Name = "btnRegister"
+        Me.btnRegister.Size = New System.Drawing.Size(150, 50)
+        Me.btnRegister.TabIndex = 18
+        Me.btnRegister.Text = "Register"
+        Me.btnRegister.UseVisualStyleBackColor = True
+        '
         'FacultyLogin
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(11.0!, 24.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(638, 439)
+        Me.Controls.Add(Me.btnRegister)
         Me.Controls.Add(Me.lblCopyright)
-        Me.Controls.Add(Me.btnFaculty)
         Me.Controls.Add(Me.btnExit)
         Me.Controls.Add(Me.btnReset)
         Me.Controls.Add(Me.btnLogin)
@@ -135,7 +135,6 @@ Partial Class FacultyLogin
     End Sub
 
     Friend WithEvents lblCopyright As Label
-    Friend WithEvents btnFaculty As Button
     Friend WithEvents btnExit As Button
     Friend WithEvents btnReset As Button
     Friend WithEvents btnLogin As Button
@@ -143,4 +142,5 @@ Partial Class FacultyLogin
     Friend WithEvents txtUsername As TextBox
     Friend WithEvents lblPassword As Label
     Friend WithEvents lblUsername As Label
+    Friend WithEvents btnRegister As Button
 End Class
